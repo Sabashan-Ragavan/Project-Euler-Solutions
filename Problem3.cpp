@@ -2,7 +2,7 @@
 
 unsigned long long MAGICNUMBER = 600851475143ull; 
 
-bool isPrime(long i); 
+bool isPrime(long num); 
 
 using namespace std; 
 
