@@ -14,9 +14,8 @@ int main()
 		for(int j = 999; j > 100; j--)
 		{
 			int test = i*j;		
-			if(isPalindrome(test))
-				if(test > largestPalindrome)
-					largestPalindrome = test; 
+			if(isPalindrome(test) && (test > largestPalindrome))
+				largestPalindrome = test; 
 		}
 	}
 	cout << "The Answer is " << largestPalindrome; 
