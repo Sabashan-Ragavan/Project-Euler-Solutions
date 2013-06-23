@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-	bool innerEscape = false; 
 	int i, j; 
 	for(i = 20; ; i+=20) 
 	{
