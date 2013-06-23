@@ -16,7 +16,7 @@ int main()
 	squareOfSum = power(sum, 2); 
 	
 	int difference = squareOfSum - sumOfSquares; 
-	cout << difference << endl; 
+	cout << "The Answer is " << difference << endl; 
 	return 0; 
 }
 
