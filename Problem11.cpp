@@ -32,7 +32,7 @@ int main ()
 	int largestNumber=0; 
 	int tmp; 
 
-	/* Checks left to right */
+	/* Checks left to right amd up to down */ 
 	for(int i=0; i<20; i++)
 	{
 		for(int j=0; j<17; j++)
@@ -40,35 +40,36 @@ int main ()
 			tmp = num_array[i][j]*num_array[i][j+1]*num_array[i][j+2]*num_array[i][j+3]; 
 			if(tmp > largestNumber)
 				largestNumber = tmp;
-			//cout << largestNumber << endl; 
-		}
-	}
-	
-	/* Checks up and down */ 
-	for(int i=0; i<20; i++)
-	{
-		for(int j=0; j<17; j++)
-		{
+
 			tmp = num_array[j][i]*num_array[j+1][i]*num_array[j+2][i]*num_array[j+3][i]; 
 			if(tmp > largestNumber)
 				largestNumber = tmp;
-			//cout << largestNumber << endl; 
+
 		}
 	}
 	
-	/* Checks diagonally */ 
-	for(int i=0; i<17; i++)
+	/* Checks forward diagonals */ 
+	for(int i=0; i<17; i++)	
 	{
 		for(int j=0; j<17; j++)
 		{
 			tmp = num_array[i][j]*num_array[i+1][j+1]*num_array[i+2][j+2]*num_array[i+3][j+3]; 
 			if(tmp > largestNumber)
 				largestNumber = tmp;
-			//cout << largestNumber << endl; 
+		}
+	} 
+	
+	/* Checks backwards diagonal */
+	for(int i=3; i<20; i++)
+	{
+		for(int j=0; j<17; j++)
+		{ 
+			tmp = num_array[i][j]*num_array[i-1][j+1]*num_array[i-2][j+2]*num_array[i-3][j+3]; 
+			if(tmp > largestNumber)
+				largestNumber = tmp;
 		}
 	}
 	
 	cout << "The answer is " << largestNumber << endl; 
-	
 	
 }
