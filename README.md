@@ -5,4 +5,4 @@ Here are my solutions to various Project Euler problems
 
 http://projecteuler.net/
 
-I openly criticize critique at sabes.ragavan@gmail.com
+I openly accept critique at sabes.ragavan@gmail.com
