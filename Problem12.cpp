@@ -11,7 +11,7 @@ int main()
 	{
 		if(numberOfFactors(i) > 500)
 		{
-			cout << i << endl; 
+			cout << "The answer is: " << i << endl; 
 			break; 
 		}
 		n++;  
